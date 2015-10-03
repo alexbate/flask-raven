@@ -20,4 +20,5 @@ Usage
     @app.route('/protected')
     @raven_auth()
     def protected():
+        current_crsid = flask.session['_raven']
         pass
